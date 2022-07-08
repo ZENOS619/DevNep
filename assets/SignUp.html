@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>     
+`   <title>Register Form</title>
+    <link rel="stylesheet"  href="CSS/datae.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script>
+        $(Document).ready(function(){
+            $(".optn-btn .fa-times").hide();
+            
+            $(".optn-btn .fa-bars").click(function(){
+                $(this).hide();
+                $(".optn-btn .fa-times").show();
+                $(".mobile ul").addClass("active");
+            });
+            $(".optn-btn .fa-times").click(function(){
+                $(this).hide();
+                $(".optn-btn .fa-bars").show();
+                $(".mobile ul").removeClass("active");
+            });
+        });
+    </script>
+    </head>
+    <body>
+        
+               <header>
+        <div class="container">
+            <nav class="desktop">
+                <a id="h1"href="Index.html"><h1>DevNep</h1></a>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li class="active"><a href="datae.html">Get Involved</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+            </nav>
+            
+            <nav class="mobile">
+                       <a id="h1"href="Index.html"><h1>DevNep</h1></a>
+                       <div class="optn-btn">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                       <i class="fa fa-times" aria-hidden="true"></i>
+                       </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Get Involved</a></li>
+                <li><a href="#">Missions</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+        
+      <div id="login-box">
+      <div class="left-box">
+          <h1><b>Sign Up</b></h1>
+          
+          <input type="text" name="username" placeholder="Username"/>
+          <input type="text" name="email" placeholder="Email"/>
+          <input type="password" name="password" placeholder="Password"/>
+        
+          <input type="password" name="password2" placeholder="Retype password"/>
+          <a href="#"><input type="submit" name="signup-button" value="Sign Up"/></a>
+          <a Id="alacc" href="logn.html"><p>Already have an account?</p></a> 
+        </div>
+        <div class="right-box">
+          <span class="signinwith">Sign up with<br/>Social Network     </span>
+        
+            <a href="#"><button class="social facebook">Log in with Facebook</button></a>    
+            <a href="#"><button class="social twitter">Log in with Twitter</button></a> 
+            <a href="#"><button class="social google">Log in with Google+</button></a> 
+            
+        
+        </div>
+        <div class="or">OR</div>
+    </div>
+        <a id="UtA" href="#"><p1>Utsab &amp; Gopal</p1></a>
+    </body>
+</html>
